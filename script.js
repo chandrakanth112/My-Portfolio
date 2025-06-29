@@ -286,3 +286,17 @@ document.addEventListener('DOMContentLoaded', () => {
   showHomeSlide(0);
   startHomeInterval();
 });
+const toggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('nav');
+const navLinks = document.querySelectorAll('nav a');
+
+toggle.addEventListener('click', () => {
+  nav.classList.toggle('nav-open');
+});
+
+navLinks.forEach(link =>
+  link.addEventListener('click', () => {
+    nav.classList.remove('nav-open');
+  })
+);
+
