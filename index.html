@@ -8,21 +8,25 @@
 </head>
 <body>
   <header>
-    <nav>
-      <a href="#home" id="home-link">Home</a>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#achievement">Achievement</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-<section class="home" id="home" style="min-height:100vh;height:100vh;width:100vw;display:flex;align-items:center;justify-content:center;position:relative;background:url('adrien-olichon-RCAhiGJsUUE-unsplash.jpg') center center / cover no-repeat;">
-  <div class="slide-content home-blow-animate"
-    style="background:rgba(228, 224, 224, 0.45);color:#fff;padding:2.5rem 2rem;border-radius:18px;min-width:32px;max-width:90vw;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,0.2);">
-    <h3 style="font-size:2.5rem;margin-bottom:1rem;">Welcome to My Portfolio</h3>
-    <p class="topic" style="font-size:1.3rem;font-weight:600;margin-bottom:1rem;">N.Chandrakanth</p>
-    <p class="description" style="font-size:1.1rem;">
+  <nav>
+    <a href="#home" id="home-link">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#achievement">Achievement</a>
+    <a href="#contact">Contact</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+</header>
+<section class="home" id="home">
+  <div class="slide-content home-blow-animate">
+    <h3>Welcome to My Portfolio</h3>
+    <p class="topic">N.Chandrakanth</p>
+    <p class="description">
       Explore my projects, skills, and experience as a developer.
     </p>
   </div>
@@ -186,21 +190,16 @@
     </p>
   </footer>
   <script src="script.js"></script>
+  <script>
+  // Responsive nav toggle
+  const navToggle = document.getElementById('nav-toggle');
+  const nav = document.querySelector('nav');
+  navToggle.addEventListener('click', () => {
+    nav.classList.toggle('nav-open');
+  });
+</script>
 </body>
 </html>
-    const nextBtn = document.getElementById('next');
-    let currentSlide = 0;
-    let slideInterval;
-
-    function showSlide(idx) {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === idx);
-      });
-      currentSlide = idx;
-    }
-
-    function nextSlide() {
-      showSlide((currentSlide + 1) % slides.length);
     }
 
     function prevSlide() {
@@ -234,4 +233,5 @@
 </body>
 </html>
 </body>
+</html>
 </html>
