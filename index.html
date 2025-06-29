@@ -8,6 +8,11 @@
 </head>
 <body>
   <header>
+  <button class="nav-toggle" aria-label="Toggle Navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   <nav>
     <a href="#home" id="home-link">Home</a>
     <a href="#about">About Me</a>
@@ -15,13 +20,9 @@
     <a href="#skills">Skills</a>
     <a href="#achievement">Achievement</a>
     <a href="#contact">Contact</a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
   </nav>
 </header>
+
 <section class="home" id="home">
   <div class="slide-content home-blow-animate">
     <h3>Welcome to My Portfolio</h3>
@@ -192,46 +193,13 @@
   <script src="script.js"></script>
   <script>
   // Responsive nav toggle
-  const navToggle = document.getElementById('nav-toggle');
-  const nav = document.querySelector('nav');
+  const navToggle = document.querySelector('.nav-toggle'); // ✅ correct selector
+  const navLinks = document.querySelectorAll('nav a');
+  const navMenu = document.querySelector('nav');
+
   navToggle.addEventListener('click', () => {
-    nav.classList.toggle('nav-open');
+    navMenu.classList.toggle('nav-open');
   });
-</script>
-</body>
-</html>
-    }
-
-    function prevSlide() {
-      showSlide((currentSlide - 1 + slides.length) % slides.length);
-    }
-
-    prevBtn.addEventListener('click', () => {
-      prevSlide();
-      resetInterval();
-    });
-    nextBtn.addEventListener('click', () => {
-      nextSlide();
-      resetInterval();
-    });
-
-    function startInterval() {
-      slideInterval = setInterval(nextSlide, 5000);
-    }
-
-    function resetInterval() {
-      clearInterval(slideInterval);
-      startInterval();
-    }
-
-    startInterval();
   </script>
 </body>
-</html>
-    startInterval();
-  </script>
-</body>
-</html>
-</body>
-</html>
 </html>
