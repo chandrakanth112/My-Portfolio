@@ -1,205 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="web.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>N. Narapureddy Chandrakanth — Portfolio</title>
+  <meta name="description" content="Portfolio of Narapureddy Chandrakanth — B.Tech IT student, front-end developer, projects: Sorting Visualizer, Voice & Chat Assistant, Games, internships and hackathons." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+
 </head>
 <body>
   <header>
-  <button class="nav-toggle" aria-label="Toggle Navigation">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <nav>
-    <a href="#home" id="home-link">Home</a>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#achievement">Achievement</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section class="home" id="home">
-  <div class="slide-content home-blow-animate">
-    <h3>Welcome to My Portfolio</h3>
-    <p class="topic">N.Chandrakanth</p>
-    <p class="description">
-      Explore my projects, skills, and experience as a developer.
-    </p>
-  </div>
-</section>
-  <section class="about" id="about">
-    <div class="about-box" style="background:rgba(240,240,240,0.85);padding:2rem 1.5rem;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,0.08);max-width:700px;margin:2rem auto;color:var(--fg);">
-      <h2>About Me</h2>
-      <p>
-        Hello! I'm Chandrakanth, a dedicated developer with a strong interest in building web applications and solving real-world problems.<br>
-        I've tackled over <strong>200 coding challenges</strong> across multiple online platforms, sharpening my problem-solving and algorithmic skills.<br>
-        I enjoy exploring new technologies, collaborating with others, and transforming ideas into impactful digital solutions.
-      </p>
-      <div class="about-education" style="color:var(--fg);">
-      <h3>Education</h3>
-      <ul>
-        <li>
-        <strong>Anil Neerukonda Institute of Technology and Sciences</strong><br>
-        B.Tech in Information Technology, 6th Semester<br>
-        <span>Sept 2022 – Present</span>
-        </li>
-        <li>
-        <strong>Narayana Junior College</strong><br>
-        MPC (Mathematics, Physics, Chemistry), State Board of Secondary Education<br>
-        <span>Sept 2020 – Sept 2022</span>
-        </li>
-      </ul>
+    <div class="nav">
+      <div class="brand">
+        <div class="dot">NC</div>
+        <div>
+          <div style="font-size:.95rem">N. Narapureddy</div>
+          <div class="muted" style="font-size:.78rem">B.Tech IT — Frontend & Algorithms</div>
+        </div>
       </div>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Open menu" onclick="toggleNav()">☰</button>
     </div>
-    </div>
-    <div class="project-buttons">
-      <button
-        onclick="window.open('https://www.linkedin.com/in/narapureddy-chandrakanth-052963314/', '_blank')"
-      >
-        🔗 LinkedIn
-      </button>
-      <button onclick="window.open('https://codeforces.com/profile/Chanduuu?graphType=all', '_blank')">⚔️ Codeforces</button>
-      <button onclick="window.open('https://leetcode.com/u/NarapureddyChandrakanth1fHaNi/', '_blank')">🧠 LeetCode</button>
-    </div>
-  </section>
+  </header>
 
-  <section class="skills" id="skills">
-    <h2>Skills</h2>
-    <div class="feature-item">
-      <h3>Frontend</h3>
-      <p> C, C++, Java, HTML, CSS, JavaScript, SQL.</p>
-    </div>
-    <div class="feature-item">
-      <h3>Backend</h3>
-      <p>Node.js, JavaScript.</p>
-    </div>
-    <div class="feature-item">
-      <h3>Tools</h3>
-      <p>Git/GitHub, VS Code, Vercel, npm.</p>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="intro">
+        <h1>Hi — I'm Chandrakanth</h1>
+        <div class="tag">B.Tech (IT) • Frontend Developer • Problem-solver (200+ coding problems)</div>
+        <p class="small muted" style="margin-top:0.9rem">I build responsive web apps and interactive visualizations. I enjoy turning algorithms into intuitive UIs and learning new technologies.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See projects</a>
+        </div>
+        <div class="card" style="margin-top:1rem">
+          <div class="stats">
+            <div class="stat"><div class="muted">Problems</div><h3>200+</h3></div>
+            <div class="stat"><div class="muted">Languages</div><h3>C / C++ / JS</h3></div>
+            <div class="stat"><div class="muted">Tools</div><h3>Git · VSCode · Vercel</h3></div>
+          </div>
+        </div>
+      </div>
+      <aside style="max-width:420px">
+        <div class="card center">
+          <img src="https://images.unsplash.com/photo-1541592106381-6d7a5c1c0a7d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3" alt="avatar" style="width:100%;border-radius:8px;margin-bottom:.8rem;object-fit:cover;max-height:300px">
+          <h3 style="margin:.2rem 0">Narapureddy Chandrakanth</h3>
+          <div class="muted small">B.Tech — Information Technology (6th sem)</div>
+          <div style="margin-top:.9rem;display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap">
+            <a class="btn ghost" href="mailto:narapureddychandrakanth@gmail.com">Email</a>
+            <a class="btn" href="tel:+919490520019">Call</a>
+          </div>
+          <div style="margin-top:.9rem" class="small muted">
+            <div>LinkedIn: <a href="https://www.linkedin.com/in/narapureddy-chandrakanth-052963314/" target="_blank">profile</a></div>
+            <div>GitHub: <a href="https://github.com/chandrakanth112" target="_blank">chandrakanth112</a></div>
+          </div>
+        </div>
+      </aside>
+    </section>
 
-  <section class="projects" id="projects" style="max-width:900px;margin:4rem auto;padding:2rem 1.5rem;box-sizing:border-box;overflow-y:auto;min-height:0;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;">
-    <h2>Projects</h2>
-    <div style="width:100%;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;align-items:stretch;">
-      <div class="feature-item">
-        <h3>Sorting Visualizer</h3>
-        <ul class="project-details">
-          <li>Built with VanillaJS, HTML, CSS</li>
-          <li>Deploy on GitHub Pages</li>
-        </ul>
-        <button
-          onclick="window.open('https://chandrakanth112.github.io/sorting-visualization/learn-sorting.html', '_blank')"
-        >
-          Live Demo
-        </button>
-        <button
-          onclick="window.open('https://github.com/chandrakanth112/sorting-visualization', '_blank')"
-        >
-          Source Code
-        </button>
+    <section id="about">
+      <div class="grid">
+        <div class="card">
+          <h2>About</h2>
+          <p class="muted small">Hello! I'm Chandrakanth — a front-end focused developer and B.Tech student. I enjoy building web apps (visualizers, assistants, games) and solving algorithmic problems. Most of my projects are built with HTML, CSS and JavaScript.</p>
+          <h3 style="margin-top:.8rem">Education</h3>
+          <ul class="clean small muted">
+            <li><strong>Anil Neerukonda Institute of Technology and Sciences</strong> — B.Tech, Information Technology (Sept 2022 — present)</li>
+            <li><strong>Narayana Junior College</strong> — MPC (Sept 2020 — Sept 2022)</li>
+          </ul>
+        </div>
       </div>
-      <div class="feature-item">
-        <h3>Stone-Paper-Scissors Game</h3>
-        <ul class="project-details">
-          <li>Simple rock-paper-scissors game implemented with JavaScript</li>
-          <li>Interactive UI</li>
-        </ul>
-        <button onclick="window.open('https://github.com/chandrakanth112/stone-paper-scissor-game', '_blank')">Source Code</button>
-      </div>
-      <div class="feature-item">
-        <h3>Voice And Chat-Bot Assistant</h3>
-        <ul class="project-details">
-          <li>Built with VanillaJS, HTML, CSS</li>
-          <li>Voice assistants respond to spoken commands, while chat-bots engage users in text-based conversations to provide
-  information or support. Both utilize natural language processing to understand and respond to queries.</li>
-        </ul>
-        
-      </div>
-      <div class="feature-item">
-        <h3>Tic Tac Toe Game</h3>
-        <ul class="project-details">
-          <li>Built with C</li>
-          <li>A web-based implementation of the classic two-player Tic Tac Toe game, created using C. Where players take turns
-  marking Xs and Os in a 3x3 grid. The first to align three of their marks horizontally, vertically, or diagonally wins.
-  </li>
-        </ul>
-        <button
-          onclick="window.open('https://github.com/chandrakanth112/tic_tac_toe_game', '_blank')"
-        >
-          View Project
-        </button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="achievement" id="achievement">
-    <h2>Achievement</h2>
-    <div class="feature-item">
-      <h3>Delgon Technologies Web Development Internship</h3>
-      <p>
-        <button class="certificate-btn" onclick="window.open('https://drive.google.com/file/d/1fruJnwFQn7YqONq7-ndqlkI3RDMPk5T6/view')">CERTIFICATE</button><br>
-        Acquired expertise in front-end development through hands-on experience at Delgon Technologies, focusing on HTML,
-        CSS, JavaScript, and responsive design principles.
-      </p>
-    </div>
-    <div class="feature-item">
-      <h3>Smart Indian Hackathon (SIH)</h3>
-      <p>
-        <button class="certificate-btn" onclick="window.open('https://drive.google.com/file/d/1qmce3X5ZY2h0WJWc8ZixPqu2DGQVmlX9/view')">CERTIFICATE</button><br>
-        Actively participated in an internal hackathon at Innvpex 2024, collaborating with teams to develop innovative
-        solutions and enhance problem-solving skills.
-      </p>
-    </div>
-    <div class="feature-item">
-      <h3>Hackathon on Augmented Reality</h3>
-      <p>
-        <button class="certificate-btn" onclick="window.open('https://drive.google.com/file/d/1ZRWyPyN4fHdPGotjeALjGsp62DwiE0Ye/view')">CERTIFICATE</button><br>
-        Secured 5th place in the national-level Augmented Reality hackathon by Brainovision Solution, competing against
-        teams from my entire college.
-      </p>
-    </div>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <h4>Sorting Visualizer</h4>
+          <p class="small muted">Responsive visualizer showing Bubble, Insertion, Selection, Quick and Merge Sort with animations.</p>
+          <div class="tags"><span class="tag-pill">HTML</span><span class="tag-pill">CSS</span><span class="tag-pill">JavaScript</span></div>
+          <div style="margin-top:.8rem;display:flex;gap:.5rem;flex-wrap:wrap">
+            <a class="btn" href="https://chandrakanth112.github.io/sorting-visualization/learn-sorting.html" target="_blank">Live</a>
+            <a class="btn ghost" href="https://github.com/chandrakanth112/sorting-visualization" target="_blank">Code</a>
+          </div>
+        </article>
+        <article class="project">
+          <h4>Stone Paper Scissors</h4>
+          <p class="small muted">Classic game implemented in JavaScript with an interactive UI.</p>
+          <div class="tags"><span class="tag-pill">HTML</span><span class="tag-pill">CSS</span><span class="tag-pill">JavaScript</span></div>
+          <div style="margin-top:.8rem"><a class="btn ghost" href="https://github.com/chandrakanth112/stone-paper-scissor-game" target="_blank">Source</a></div>
+        </article>
+        <article class="project">
+          <h4>Voice & Chat-Bot Assistant</h4>
+          <p class="small muted">Assistant using speech APIs and chat flows for user interaction.</p>
+          <div class="tags"><span class="tag-pill">JavaScript</span><span class="tag-pill">Web APIs</span></div>
+        </article>
+        <article class="project">
+          <h4>Tic Tac Toe (C)</h4>
+          <p class="small muted">Classic 3x3 Tic Tac Toe game implemented in C.</p>
+          <div style="margin-top:.8rem"><a class="btn ghost" href="https://github.com/chandrakanth112/tic_tac_toe_game" target="_blank">Repository</a></div>
+        </article>
+      </div>
+    </section>
 
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <form style="max-width:400px;margin:2rem auto;display:flex;flex-direction:column;gap:1rem;">
-      <input type="text" name="name" placeholder="Your Name" required style="padding:0.75rem;border-radius:8px;border:1px solid #ccc;">
-      <input type="email" name="email" placeholder="Your Email" required style="padding:0.75rem;border-radius:8px;border:1px solid #ccc;">
-      <textarea name="message" placeholder="Your Message" rows="5" required style="padding:0.75rem;border-radius:8px;border:1px solid #ccc;"></textarea>
-      <button type="submit" style="background:var(--accent);color:white;border:none;padding:0.75rem 1.5rem;border-radius:8px;font-size:1rem;cursor:pointer;">Send</button>
-    </form>
-    <div style="text-align:center;color:var(--muted);margin-top:1rem;">
-      Or email me at <a href="mailto:chandrakanth@example.com" style="color:var(--accent);text-decoration:none;">chandrakanth@example.com</a>
-      <br>
-      Connect with me on 
-      <a href="https://www.linkedin.com/in/narapureddy-chandrakanth-052963314/" target="_blank" style="color:var(--accent);text-decoration:none;font-weight:600;">
-        LinkedIn
-      </a>
-    </div>
-  </section>
+    <section id="skills">
+      <h2>Skills & Technologies</h2>
+      <div class="card">
+        <div style="display:flex;gap:1rem;flex-wrap:wrap">
+          <div style="flex:1 1 220px"><strong>Languages</strong><div class="muted small">C, C++, Java, HTML, CSS, JavaScript, SQL</div></div>
+          <div style="flex:1 1 220px"><strong>Frameworks & Tools</strong><div class="muted small">Node.js, Git/GitHub, VS Code, Vercel, npm</div></div>
+          <div style="flex:1 1 220px"><strong>Interests</strong><div class="muted small">Algorithms, Web UIs, Voice interfaces, Competitive programming</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Delgon Technologies — Web Development Internship</h3>
+          <p class="muted small">Hands-on front-end development experience focusing on HTML, CSS, JavaScript, and responsive design principles. <a href="https://drive.google.com/file/d/1fruJnwFQn7YqONq7-ndqlkI3RDMPk5T6/view" target="_blank">View Certificate</a></p>
+        </div>
+        <div class="card">
+          <h3>Smart India Hackathon (SIH)</h3>
+          <p class="muted small">Participated in Innvpex 2024 internal hackathon, collaborating with teams to develop innovative solutions. <a href="https://drive.google.com/file/d/1qmce3X5ZY2h0WJWc8ZixPqu2DGQVmlX9/view" target="_blank">View Certificate</a></p>
+        </div>
+        <div class="card">
+          <h3>Hackathon on Augmented Reality</h3>
+          <p class="muted small">Secured 5th place in a national-level Augmented Reality hackathon by Brainovision Solution. <a href="https://drive.google.com/file/d/1ZRWyPyN4fHdPGotjeALjGsp62DwiE0Ye/view" target="_blank">View Certificate</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Let's work together</h3>
+          <p class="muted small">Reach out for internships, collaborations, or project feedback. I respond to emails and LinkedIn messages.</p>
+          <p><strong>Email</strong><br><a href="mailto:narapureddychandrakanth@gmail.com">narapureddychandrakanth@gmail.com</a></p>
+          <p><strong>Phone</strong><br><a href="tel:+919490520019">+91 94905 20019</a></p>
+          <p><strong>Location</strong><br>Visakhapatnam, India</p>
+          <div style="margin-top:1rem"><a class="btn ghost" href="https://www.linkedin.com/in/narapureddy-chandrakanth-052963314/" target="_blank">LinkedIn</a> <a class="btn" href="https://github.com/chandrakanth112" target="_blank">GitHub</a></div>
+        </div>
+        <div class="card">
+          <h3>Send a quick message</h3>
+          <form id="contactForm">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" rows="6" placeholder="Message..." required></textarea>
+            <button class="btn" type="submit">Send message</button>
+          </form>
+          <p id="formResponse" class="muted small" style="margin-top:.6rem;display:none"></p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>
-      &copy; 2025 Chandrakanth. Connect with me on
-      <a href="https://www.linkedin.com/in/narapureddy-chandrakanth-052963314/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
-    </p>
+    <div>© 2025 Narapureddy Chandrakanth • Built with HTML, CSS & JavaScript</div>
+    <div style="margin-top:.5rem" class="muted small">Available on <a href="https://github.com/chandrakanth112/My-Portfolio" target="_blank">GitHub</a></div>
   </footer>
-  <script src="script.js"></script>
-  <script>
-  // Responsive nav toggle
-  const navToggle = document.querySelector('.nav-toggle'); // ✅ correct selector
-  const navLinks = document.querySelectorAll('nav a');
-  const navMenu = document.querySelector('nav');
 
-  navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('nav-open');
-  });
-  </script>
+  
 </body>
 </html>
