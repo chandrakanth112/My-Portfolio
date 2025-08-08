@@ -7,10 +7,66 @@
 <meta name="description" content="Portfolio of Narapureddy Chandrakanth — B.Tech IT student and front-end developer. Highlights: interactive projects, internships, hackathons, and 200+ LeetCode problems solved." />
 
   <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    :root{
+      --bg:#f6fbff; --card:#ffffff; --muted:#6b7280; --accent:#0A84FF; --glass: rgba(255,255,255,0.7);
+      --container:1100px; --radius:14px; --pad:1.05rem;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:var(--bg);color:#0f1724}
+    a{color:var(--accent);text-decoration:none}
+    header{position:sticky;top:0;backdrop-filter:blur(6px);background:linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4));border-bottom:1px solid rgba(10,132,255,0.06);}
+    .nav{max-width:var(--container);margin:0 auto;display:flex;gap:1rem;align-items:center;padding:0.6rem 1rem}
+    .brand{display:flex;align-items:center;gap:.7rem;font-weight:700}
+    .brand .dot{width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#006ae6);display:inline-grid;place-items:center;color:#fff}
+    nav{margin-left:auto;display:flex;gap:1rem}
+    nav a{padding:.5rem .8rem;border-radius:10px;font-weight:600;color:#08315e}
+    nav a:hover{background:#eaf4ff}
+    .hamburger{display:none;border:0;background:none;padding:.5rem}
 
- <link rel="stylesheet" href="assets/web.css">
-<script src="scripts/script.js" defer></script>
+    main{max-width:var(--container);margin:2.2rem auto;padding:0 1rem}
+    .hero{display:grid;grid-template-columns:1fr 400px;gap:2rem;align-items:center}
+    .intro{background:linear-gradient(180deg,#fff,#fbfdff);padding:2rem;border-radius:var(--radius);box-shadow:0 8px 28px rgba(10,132,255,0.08)}
+    h1{margin:0;font-size:2.1rem}
+    .tag{color:var(--muted);margin-top:.25rem}
+    .cta{margin-top:1.1rem;display:flex;gap:.6rem}
+    .btn{background:var(--accent);color:white;padding:.6rem 1rem;border-radius:10px;border:none;font-weight:700;cursor:pointer}
+    .btn.ghost{background:transparent;color:var(--accent);border:1.6px solid rgba(10,132,255,0.12)}
 
+    .card{background:var(--card);padding:1rem;border-radius:12px;box-shadow:0 6px 18px rgba(10,132,255,0.06)}
+    .stats{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem}
+    .stat{flex:1 1 120px;padding:.8rem;border-radius:10px;background:linear-gradient(180deg,#fbfbff,#fff);text-align:center}
+    .stat h3{margin:.25rem 0;color:var(--accent)}
+
+    section{margin-top:1.6rem}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+    .list{display:flex;flex-direction:column;gap:.6rem}
+    ul.clean{padding-left:1.05rem}
+
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .project{padding:1rem;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid rgba(10,132,255,0.04)}
+    .project h4{margin:.2rem 0}
+    .tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.6rem}
+    .tag-pill{font-size:.82rem;padding:.25rem .5rem;border-radius:999px;background:#eef7ff;color:#063055;border:1px solid rgba(10,132,255,0.06)}
+
+    footer{margin:2rem auto;text-align:center;color:var(--muted);padding:2rem 1rem}
+
+    /* contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 380px;gap:1rem}
+    form{display:flex;flex-direction:column;gap:.6rem}
+    input,textarea{padding:.7rem;border-radius:8px;border:1px solid #e6eefc;background:#fbfdff}
+    button[type=submit]{margin-top:.4rem}
+
+    /* responsive */
+    @media (max-width:980px){.hero{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+    @media (max-width:700px){nav{display:none}.hamburger{display:block}.brand{gap:.5rem}.hero{gap:1rem}.projects-grid{grid-template-columns:1fr}}
+
+    /* small utilities */
+    .muted{color:var(--muted)}
+    .small{font-size:.92rem}
+    .center{text-align:center}
+  </style>
 </head>
 <body>
   <header>
@@ -18,7 +74,7 @@
       <div class="brand">
         <div class="dot">NC</div>
         <div>
-          <div style="font-size:.95rem">N. Narapureddy</div>
+          <div style="font-size:.95rem">N. Chandrakanth</div>
           <div class="muted" style="font-size:.78rem">B.Tech IT — Frontend & Algorithms</div>
         </div>
       </div>
@@ -45,8 +101,8 @@
         <div class="card" style="margin-top:1rem">
           <div class="stats">
             <div class="stat"><div class="muted">Problems</div><h3>200+</h3></div>
-            <div class="stat"><div class="muted">Languages</div><h3>C / C++ / JS</h3></div>
-            <div class="stat"><div class="muted">Tools</div><h3>Git · VSCode · Vercel</h3></div>
+            <div class="stat"><div class="muted">Languages</div><h3>C / C++ / Java</h3></div>
+            <div class="stat"><div class="muted">Tools</div><h3>Git/GitHub, VS Code , Linux</h3></div>
           </div>
         </div>
       </div>
@@ -60,7 +116,7 @@
             <a class="btn" href="tel:+919490520019">Call</a>
           </div>
           <div style="margin-top:.9rem" class="small muted">
-            <div>LinkedIn: <a href="https://www.linkedin.com/in/narapureddy-chandrakanth-052963314/" target="_blank">profile</a></div>
+            <div>LinkedIn: <a href="https://www.linkedin.com/in/chandrakanth-narapureddy-052963314/" target="_blank">profile</a></div>
             <div>GitHub: <a href="https://github.com/chandrakanth112" target="_blank">chandrakanth112</a></div>
           </div>
         </div>
@@ -74,8 +130,8 @@
           <p class="muted small">Hello! I'm Chandrakanth — a front-end focused developer and B.Tech student. I enjoy building web apps (visualizers, assistants, games) and solving algorithmic problems(200+). Most of my projects are built with HTML, CSS and JavaScript.</p>
           <h3 style="margin-top:.8rem">Education</h3>
           <ul class="clean small muted">
-            <li><strong>Anil Neerukonda Institute of Technology and Sciences</strong> — B.Tech, Information Technology (Sept 2022 — present)</li>
-            <li><strong>Narayana Junior College</strong> — MPC (Sept 2020 — Sept 2022)</li>
+            <li><strong>Anil Neerukonda Institute of Technology and Sciences</strong> :-<br> B.Tech, Information Technology (Sept 2022 — present)</li>
+            <li><strong>Narayana Junior College</strong> :- <br>MPC (Sept 2020 — Sept 2022)</li>
           </ul>
         </div>
       </div>
@@ -99,6 +155,7 @@
           <div class="tags"><span class="tag-pill">HTML</span><span class="tag-pill">CSS</span><span class="tag-pill">JavaScript</span></div>
           <div style="margin-top:.8rem"><a class="btn ghost" href="https://github.com/chandrakanth112/stone-paper-scissor-game" target="_blank">Source</a></div>
         </article>
+
         <article class="project">
           <h4>Voice & Chat-Bot Assistant</h4>
           <p class="small muted">Assistant using speech APIs and chat flows for user interaction.</p>
@@ -109,6 +166,7 @@
           <h4>Tic Tac Toe (C)</h4>
           <p class="small muted">Classic 3x3 Tic Tac Toe game implemented in C.</p>
           <div class="tags"><span class="tag-pill">C</span>
+            <br><div></div>
           <div style="margin-top:.8rem"><a class="btn ghost" href="https://github.com/chandrakanth112/tic_tac_toe_game" target="_blank">Source</a></div>
         </article>
       </div>
@@ -147,8 +205,10 @@
       <h2>Contact</h2>
       <div class="contact-grid">
         <div class="card">
-          <h3>Let's work together</h3>
-          <p class="muted small">Reach out for internships, collaborations, or project feedback. I respond to emails and LinkedIn messages.</p>
+          <h3>Let’s Connect</h3>
+<p class="muted small">
+I'm currently pursuing B.Tech in IT and open to internships, freelance work, or collaborative projects. If you have an opportunity or just want to connect — feel free to reach out via email or LinkedIn.
+</p>
           <p><strong>Email</strong><br><a href="mailto:narapureddychandrakanth@gmail.com">narapureddychandrakanth@gmail.com</a></p>
           <p><strong>Phone</strong><br><a href="tel:+919490520019">+91 94905 20019</a></p>
           <p><strong>Location</strong><br>Visakhapatnam, India</p>
@@ -175,10 +235,8 @@
 
   
 </body>
+<script>
+     function toggleNav(){document.querySelector('nav').classList.toggle('active');}
+    document.getElementById('contactForm')?.addEventListener('submit',function(e){e.preventDefault();const f=e.currentTarget;const data={name:f.name.value,email:f.email.value,message:f.message.value};const resp=document.getElementById('formResponse');resp.style.display='block';resp.textContent='Thanks '+(data.name||'there')+'! I received your message (demo). I will reply via email.';f.reset();});
+  </script>
 </html>
-
-
-
-
-
-
